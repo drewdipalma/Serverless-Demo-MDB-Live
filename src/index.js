@@ -1,13 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-
+import { render } from 'react-dom'
+import { Stitch } from "mongodb-stitch-browser-sdk";
 import App from './App'
 
-export default App
+const APP_ID = "serverless-party-pnwuh";
 
-if (typeof document !== 'undefined') {
-  const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate || ReactDOM.render
-  const render = (Component) => renderMethod(<Component />, document.getElementById('root'))
+// Instantiate a StitchClient
+export const app = Stitch.hasAppClient(APP_ID)
+  ? Stitch.getAppClient(APP_ID)
+  : Stitch.initializeAppClient(APP_ID);
 
-  render(App)
-}
+render(
+  <App />,
+  document.getElementById("root"),
+);
