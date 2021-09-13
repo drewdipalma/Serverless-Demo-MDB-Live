@@ -1,0 +1,13 @@
+{
+    "id": "5ecc4ea3746ccf84578e144d",
+    "name": "newUserTrigger",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "function_name": "newUser",
+    "disabled": false
+}
