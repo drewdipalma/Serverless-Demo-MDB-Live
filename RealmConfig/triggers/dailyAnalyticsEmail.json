@@ -1,0 +1,10 @@
+{
+    "id": "5ecc53b270be844b3d8915a9",
+    "name": "dailyAnalyticsEmail",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 8 * * MON-FRI"
+    },
+    "function_name": "analyticsEmail",
+    "disabled": true
+}

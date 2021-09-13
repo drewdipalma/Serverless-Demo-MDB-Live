@@ -1,0 +1,13 @@
+{
+    "id": "5ecc4fba3961ac6d906bbbc9",
+    "name": "LoginAlert",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "LOGIN",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "function_name": "sendLoginAlert",
+    "disabled": false
+}
